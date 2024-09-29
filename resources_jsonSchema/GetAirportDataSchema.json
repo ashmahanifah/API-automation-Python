@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "from_airport": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "iata": {
+                  "type": "string"
+                },
+                "icao": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                },
+                "altitude": {
+                  "type": "integer"
+                },
+                "timezone": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "city",
+                "country",
+                "iata",
+                "icao",
+                "latitude",
+                "longitude",
+                "altitude",
+                "timezone"
+              ]
+            },
+            "to_airport": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "iata": {
+                  "type": "string"
+                },
+                "icao": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                },
+                "altitude": {
+                  "type": "integer"
+                },
+                "timezone": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "city",
+                "country",
+                "iata",
+                "icao",
+                "latitude",
+                "longitude",
+                "altitude",
+                "timezone"
+              ]
+            },
+            "kilometers": {
+              "type": "number"
+            },
+            "miles": {
+              "type": "number"
+            },
+            "nautical_miles": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "from_airport",
+            "to_airport",
+            "kilometers",
+            "miles",
+            "nautical_miles"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "attributes"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}
